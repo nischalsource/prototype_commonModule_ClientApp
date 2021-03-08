@@ -1,0 +1,48 @@
+{
+  "name": "moduleclientexample",
+  "version": "1.0.0",
+  "description": "a client that will consume another module",
+  "repository": "git@github.com:nischalsource/prototype_commonModule_ClientApp.git",
+  "keywords": [
+    ""
+  ],
+  "author": {
+    "name": "Nischal Bachu",
+    "email": "nischal.bachu@gmail.com",
+    "url": ""
+  },
+  "license": "MIT",
+  "scripts": {
+    "test": "grunt"
+  },
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "esm": "^3.0.84",
+    "prototype_commonModule": "git@github.com:nischalsource/prototype_commonModule.git"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/node": "^7.0.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "webpack-cli": "^3.1.2"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "4"
+          }
+        }
+      ]
+    ],
+    "plugins": [
+      "transform-runtime"
+    ]
+  }
+}
